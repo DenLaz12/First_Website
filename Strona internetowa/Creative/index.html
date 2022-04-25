@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Creative</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+ <!------ Sprite ------>
+<svg style="display: none;">
+
+    <symbol id="facebook" viewBox="0 0 430.113 430.114">
+            <g>
+                <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                    c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                    c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+            </g>
+    </symbol>
+
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+            c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+            c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+            c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+            c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+            C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+            C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+    </symbol>
+
+    <symbol id="linkedin" viewBox="0 0 512 512">
+        <g>
+            <path d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/>
+        </g>
+    </symbol>
+
+</svg>
+
+<!--Header-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner " id="sidebar">
+            <div class="toggle-btn" onclick="sidebar_menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <img src="img/Logo.jpg" alt="">
+            </div>
+            <nav class="header__nav">
+                <a class="nav__link" href="#features">Features</a>
+                <a class="nav__link" href="#works">Works</a>
+                <a class="nav__link" href="#our_team">Our team</a>
+                <a class="nav__link" href="#testimonials">Testimonials</a>
+                <a class="nav__link" href="#download">Download</a>
+            </nav>
+            <h1 id="clock">00:00:00</h1>
+            <div class="header__icon">
+
+                <a class="social__item" href="https://www.facebook.com/">
+                   <svg class="social__icon">
+                       <use xlink:href="#facebook"></use>
+                   </svg>
+                </a>
+
+                <a class="social__item" href="https://twitter.com/?lang=ru">
+                   <svg class="social__icon">
+                       <use xlink:href="#twitter"></use>
+                   </svg>
+                </a>
+
+                <a class="social__item" href="https://www.linkedin.com/">
+                   <svg class="social__icon">
+                       <use xlink:href="#linkedin"></use>
+                   </svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--Intro-->
+<div class="intro" id="bg_img">
+    <div class="container">
+       <div class="intro__inner">
+            <h1 class="intro__title">Creatives</h1>
+            <h2 class="intro__subtitle">Power by Dima and Denys</h2>
+            <p class=" intro_text">Scroll down</p>
+            <a class="intro__scroll" href="#features"><img src="img/icons8-double-down-75.png"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Features -->
+
+<!--link in page-->
+    <a id="features" href="#"></a>
+
+<div class="container">
+
+    <div class="features">
+        <div class="features__item">
+            <img class="features__icon" src="img/icons8-light-80.png" alt="">
+            <h3 class="features__title">Jakość</h3>
+            <div class="features__text">Każde zdjęcie zostanie przetworzone w najwyższej jakości.</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/icons8-paper-plane-80.png" alt="">
+            <h3 class="features__title">Szybkość</h3>
+            <div class="features__text">Każde zamowienie zostanie zrealizowane tak szybko, jak to możliwie.</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/icons8-sofa-80.png" alt="">
+            <h3 class="features__title">Komfort</h3>
+            <div class="features__text">Nasza firma wykona projekt do początku do końca.</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/icons8-money-80.png" alt="">
+            <h3 class="features__title">Budżet</h3>
+            <div class="features__text">Każdy projekt jest dostosowany do klienta i od tego będzie zależała cena pracy.</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/icons8-people-80.png" alt="">
+            <h3 class="features__title">Obsługa klienta</h3>
+            <div class="features__text">Odpowiadamy na pytania w ciągu 10 minut.</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="img/icons8-laptop-computer-80.png" alt="">
+            <h3 class="features__title">Technologii</h3>
+            <div class="features__text">Wykorzystujemy jedne z najnowocześniejszych technologii na rynku.</div>
+        </div>
+    </div>
+</div>
+
+<!-- Works -->
+    <a id="works" href="#"></a>
+
+<div class="works">
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-1.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+
+
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-2.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-3.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-4.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-5.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-6.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-7.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+
+    <div class="works__item">
+       <a href="https://www.goodfon.ru/">
+        <img class="works__photo" src="img/works/work-8.jpg" alt="">
+        <div class="works__content">
+            <div class="works__title">Project Name</div>
+            <div class="works__text">User Interface Design</div>
+        </div>
+        </a>
+    </div>
+</div>
+
+<!-- Team -->
+
+<a id="our_team" href="#"></a>
+
+<div class="team">
+    <div class="container">
+        <div class="team__inner">
+            <div class="team__item">
+                <img class="team__photo" src="img/Devushki_s_volosami_do_plech_1_15200049.jpg" alt="">
+                <div class="team__name">Olga Malykowa</div>
+                <div class="team__prof">Manager</div>
+                <div class="team__text">Zajmuję się obsługą klienta i kalkulacją budżetu.</div>
+                <div class="header__icon">
+                    <a class="social__item" href="https://www.facebook.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#facebook"></use>
+                       </svg>
+                     </a>
+
+                    <a class="social__item" href="https://twitter.com/?lang=ru">
+                        <svg class="social__icon">
+                           <use xlink:href="#twitter"></use>
+                       </svg>
+                    </a>
+
+                    <a class="social__item" href="https://www.linkedin.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#linkedin"></use>
+                       </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__photo" src="img/26b031d5644066c8f6785f757df8cfcf.jpg" alt="">
+                <div class="team__name">Mike Anderson</div>
+                <div class="team__prof">Photographer</div>
+                <div class="team__text">Spotyka się z klientem, robi zjęcia i zajmuje się obrobką zdjęć.</div>
+                <div class="header__icon">
+                    <a class="social__item" href="https://www.facebook.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#facebook"></use>
+                       </svg>
+                     </a>
+
+                    <a class="social__item" href="https://twitter.com/?lang=ru">
+                        <svg class="social__icon">
+                           <use xlink:href="#twitter"></use>
+                       </svg>
+                    </a>
+
+                    <a class="social__item" href="https://www.linkedin.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#linkedin"></use>
+                       </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__photo" src="img/best-hairstyles-for-men-2020.jpg" alt="">
+                <div class="team__name">Krzysztof Wasylewski</div>
+                <div class="team__prof">Photographer</div>
+                <div class="team__text">Spotyka się z klientem, robi zjęcia i zajmuje się obrobką zdjęć.</div>
+                <div class="header__icon">
+                    <a class="social__item" href="https://www.facebook.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#facebook"></use>
+                       </svg>
+                     </a>
+
+                    <a class="social__item" href="https://twitter.com/?lang=ru">
+                        <svg class="social__icon">
+                           <use xlink:href="#twitter"></use>
+                       </svg>
+                    </a>
+
+                    <a class="social__item" href="https://www.linkedin.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#linkedin"></use>
+                       </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__photo" src="img/385cd2152320d56f4acc7d3e66f803c5.jpg" alt="">
+                <div class="team__name">Andżej Malewski</div>
+                <div class="team__prof">Programmer</div>
+                <div class="team__text">Aktualizuje informacje w serwisie, prowadzi bazę danych klientow i prownikow.</div>
+                <div class="header__icon">
+                    <a class="social__item" href="https://www.facebook.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#facebook"></use>
+                       </svg>
+                     </a>
+
+                    <a class="social__item" href="https://twitter.com/?lang=ru">
+                        <svg class="social__icon">
+                           <use xlink:href="#twitter"></use>
+                       </svg>
+                    </a>
+
+                    <a class="social__item" href="https://www.linkedin.com/">
+                       <svg class="social__icon">
+                           <use xlink:href="#linkedin"></use>
+                       </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!------ Testimonials ------>
+<a id="testimonials" href="#"></a>
+<div class="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+
+            <div class="reviews__foto">
+                <img   class="reviews__img"src="img/a456f5ff76bb1d5c8eb266e5881f22d0_706x397.jpg" alt="">
+            </div>
+
+            <div class="reviews__content" id="show_reviews">
+                <div class="reviews__text" id="text">"Karzystała się z usług Creatives i była pod dużym wrażeniem jakości wykonanych projektow, polecam..."</div>
+                <div class="reviews__autor" id="autor">Susan Sims, Interaction Designer at XYZ</div>
+                <input class = "new__reviews" type="button" value="add reviews" onclick="add_reviews()">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!------ Download ------>
+<a id="download" href="#"></a>
+<div class="download">
+    <div class="container">
+        <h3 class="download__title">Jeśli jesteś gotowy skorzystaj z naszych usług</h3>
+        <div class="download__text">
+            <p>Możesz pobrać informacje z tego dokumentu</p>
+        </div>
+        <form class = "download_file" onsubmit="download(this['name'].value)">
+            <input class = "document__value" type="text" name="name" value="test.txt">
+            <input class="btn  btn--long  btn--red" type="submit" value="Download">
+        </form>
+    </div>
+</div>
+
+<!------ Footer ------>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+
+            <div class="footer__block">
+                <h4 class="footer__title">Location</h4>
+                <address class="footer__address">
+                    <div>3481 Stokłosy</div>
+                    <div>Warszawa, Poland</div>
+                </address>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__title">Share with Love</h4>
+                <div class="social  social--footer">
+                    <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="https://twitter.com/?lang=ru" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="https://www.linkedin.com/" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__title">About Creatives</h4>
+                <div class="footer__text">
+                    <p>Zajmujemy się zdjęciami, ich obrobką itp., w naszym małym zespole pracują kwalifikowani eksperty w tej dziedzinie.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright">
+       <div class="container">
+           <div class="copyright__text">
+               <div>Copyright Creatives. All Rights Reserved</div>
+               <div>Made <span>by Dima and Denys</span></div>
+           </div>
+       </div>
+    </div>
+</footer>
+
+<script>
+    //scroll for link in page
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href')
+
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+</script>
+</body>
+</html>
